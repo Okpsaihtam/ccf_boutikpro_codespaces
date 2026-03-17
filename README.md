@@ -17,7 +17,7 @@
 | Questions | [Questions du TP](docs/questions/QUESTIONS-TP.md) | Questions de cours liées au TP | OK |
 | Évaluation | [Grille](docs/grille_evaluation.md) | Barème indicatif | OK |
 
-BoutikPro est une application de gestion commerciale simplifiée servant de support à un CCF de BTS SIO 2e année. Le projet est centré sur :
+BoutikPro est une application de gestion commerciale simplifiée . Le projet est centré sur :
 
 - la modélisation UML et Merise ;
 - la création et la modification d'une base MySQL ;
@@ -79,7 +79,7 @@ https://editor.plantuml.com/
   - [docs/guides/SQLALCHEMY_CORE.md](docs/guides/SQLALCHEMY_CORE.md)
   - [docs/guides/SQLALCHEMY_ORM.md](docs/guides/SQLALCHEMY_ORM.md)
 
-### Option E : installation locale
+### Option 2 : installation locale
 
 Cette option permet de travailler hors Codespaces, sur Windows, Linux, macOS ou WSL.
 
