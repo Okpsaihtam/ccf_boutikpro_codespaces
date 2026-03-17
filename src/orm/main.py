@@ -19,6 +19,9 @@ class Client(Base):
 
 if __name__ == "__main__":
     print_menu("Mode SQLAlchemy ORM")
+    print("Fichier à compléter : src/orm/main.py")
+    print("Commande d'exécution : python -m src.orm.main")
+    print()
     with Session(engine) as session:
         for client in session.query(Client).order_by(Client.id_client).all():
             print(client.id_client, client.nom, client.prenom, client.email)

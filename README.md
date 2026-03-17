@@ -7,7 +7,7 @@
 | Démarrage | [START-HERE](START-HERE.md) | Feuille de route de l'étudiant | OK |
 | Sujet | [SUBJECT](SUBJECT.md) | Énoncé complet du CCF | OK |
 | Option 1 - Installation distante | [Guide installation distante](docs/INSTALLATION-CODESPACE.md) | Lancement avec GitHub Codespaces et outils en ligne | OK |
-| Option 2 - Installation locale | [Guide installation locale](docs/INSTALLATION-LOCALE.md) | Installation sur poste personnel | OK |
+| Option E - Installation locale | [Guide installation locale](docs/INSTALLATION-LOCALE.md) | Installation sur poste personnel | OK |
 | CRUD Python | [Guide CRUD](docs/guides/CRUD_PYTHON.md) | Rappels Create / Read / Update / Delete | OK |
 | DB-API | [Guide DB-API](docs/guides/PYTHON_DB_API.md) | Connexion native MySQL en Python | OK |
 | SQLAlchemy Core | [Guide Core](docs/guides/SQLALCHEMY_CORE.md) | Requêtes SQLAlchemy Core | OK |
@@ -17,7 +17,7 @@
 | Questions | [Questions du TP](docs/questions/QUESTIONS-TP.md) | Questions de cours liées au TP | OK |
 | Évaluation | [Grille](docs/grille_evaluation.md) | Barème indicatif | OK |
 
-BoutikPro est une application de gestion commerciale simplifiée . Le projet est centré sur :
+BoutikPro est une application de gestion commerciale simplifiée servant de support à un CCF de BTS SIO 2e année. Le projet est centré sur :
 
 - la modélisation UML et Merise ;
 - la création et la modification d'une base MySQL ;
@@ -79,7 +79,7 @@ https://editor.plantuml.com/
   - [docs/guides/SQLALCHEMY_CORE.md](docs/guides/SQLALCHEMY_CORE.md)
   - [docs/guides/SQLALCHEMY_ORM.md](docs/guides/SQLALCHEMY_ORM.md)
 
-### Option 2 : installation locale
+### Option E : installation locale
 
 Cette option permet de travailler hors Codespaces, sur Windows, Linux, macOS ou WSL.
 
@@ -95,6 +95,66 @@ Cette option permet de travailler hors Codespaces, sur Windows, Linux, macOS ou 
 ```text
 https://editor.plantuml.com/
 ```
+
+
+## Où se trouvent les 3 modes d'accès Python et comment les lancer
+
+Les trois points d'entrée Python du CCF se trouvent dans le dossier `src/` :
+
+- `src/dbapi/main.py` pour **Python DB-API** ;
+- `src/core/main.py` pour **SQLAlchemy Core** ;
+- `src/orm/main.py` pour **SQLAlchemy ORM**.
+
+Depuis la racine du projet, vous pouvez lancer chaque mode avec l'une des commandes suivantes.
+
+### Depuis GitHub Codespaces
+
+```bash
+python -m src.dbapi.main
+python -m src.core.main
+python -m src.orm.main
+```
+
+Vous pouvez aussi utiliser les scripts fournis :
+
+```bash
+bash scripts/run_dbapi.sh
+bash scripts/run_core.sh
+bash scripts/run_orm.sh
+```
+
+### Depuis une installation locale
+
+Activez d'abord l'environnement virtuel, puis placez-vous à la racine du dépôt.
+
+Sous Windows PowerShell :
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+python -m src.dbapi.main
+python -m src.core.main
+python -m src.orm.main
+```
+
+Sous Windows CMD :
+
+```bat
+.venv\Scripts\activate.bat
+python -m src.dbapi.main
+python -m src.core.main
+python -m src.orm.main
+```
+
+Sous Linux, macOS ou WSL :
+
+```bash
+source .venv/bin/activate
+python -m src.dbapi.main
+python -m src.core.main
+python -m src.orm.main
+```
+
+Chaque étudiant choisit **un seul mode d'accès** pour le développement principal du CRUD, mais il peut tester les trois lanceurs pour comparer leur fonctionnement.
 
 ## Analyse fonctionnelle du TP
 

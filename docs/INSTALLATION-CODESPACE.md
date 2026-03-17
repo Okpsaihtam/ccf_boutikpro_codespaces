@@ -49,3 +49,22 @@ python src/orm/main.py
 3. `docs/guides/MCD_MLD.md`
 4. `sql/student_upgrade.sql`
 5. le mode Python choisi
+
+
+## Lancer les modes Python
+
+Depuis la racine du projet dans le terminal Codespaces :
+
+```bash
+python -m src.dbapi.main
+python -m src.core.main
+python -m src.orm.main
+```
+
+Ou avec les scripts :
+
+```bash
+bash scripts/run_dbapi.sh
+bash scripts/run_core.sh
+bash scripts/run_orm.sh
+```

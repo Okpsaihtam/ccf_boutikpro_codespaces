@@ -13,6 +13,9 @@ def list_clients():
 
 if __name__ == "__main__":
     print_menu("Mode SQLAlchemy Core")
+    print("Fichier à compléter : src/core/main.py")
+    print("Commande d'exécution : python -m src.core.main")
+    print()
     list_clients()
     print("
 Compléter ce fichier pour réaliser le CRUD demandé.")

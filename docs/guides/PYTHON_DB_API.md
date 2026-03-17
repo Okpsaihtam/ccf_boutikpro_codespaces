@@ -1,5 +1,36 @@
 # Guide Python DB-API
 
+## Où se trouve le point d'entrée de ce mode
+
+- Fichier principal à compléter : `src/dbapi/main.py`
+- Répertoire de travail : racine du dépôt `ccf_boutikpro_codespaces/`
+
+## Comment lancer ce mode
+
+### En GitHub Codespaces
+
+Depuis le terminal ouvert à la racine du projet :
+
+```bash
+python -m src.dbapi.main
+```
+
+### En local
+
+Après activation de l'environnement virtuel et depuis la racine du projet :
+
+```bash
+python -m src.dbapi.main
+```
+
+### Script d'aide disponible
+
+```bash
+bash scripts/run_dbapi.sh
+```
+
+Ce lancement permet de vérifier que la connexion à MySQL fonctionne avant de compléter le CRUD demandé dans le CCF.
+
 ## Principe
 
 Python DB-API permet d'exécuter directement des requêtes SQL depuis Python à l'aide d'un connecteur MySQL.

@@ -1,5 +1,36 @@
 # Guide SQLAlchemy Core
 
+## Où se trouve le point d'entrée de ce mode
+
+- Fichier principal à compléter : `src/core/main.py`
+- Répertoire de travail : racine du dépôt `ccf_boutikpro_codespaces/`
+
+## Comment lancer ce mode
+
+### En GitHub Codespaces
+
+Depuis le terminal ouvert à la racine du projet :
+
+```bash
+python -m src.core.main
+```
+
+### En local
+
+Après activation de l'environnement virtuel et depuis la racine du projet :
+
+```bash
+python -m src.core.main
+```
+
+### Script d'aide disponible
+
+```bash
+bash scripts/run_core.sh
+```
+
+Ce lancement permet de vérifier que la connexion à MySQL fonctionne avant de compléter le CRUD demandé dans le CCF.
+
 ## Principe
 
 SQLAlchemy Core permet de travailler avec SQL de manière structurée sans utiliser de classes métiers mappées sur les tables.

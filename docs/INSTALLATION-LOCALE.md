@@ -97,3 +97,32 @@ bash scripts/local/setup_macos.sh
 ```bash
 bash scripts/local/setup_wsl.sh
 ```
+
+
+## Lancer les modes Python
+
+Une fois l'environnement virtuel activé et depuis la racine du projet :
+
+### Windows PowerShell
+
+```powershell
+python -m src.dbapi.main
+python -m src.core.main
+python -m src.orm.main
+```
+
+### Windows CMD
+
+```bat
+python -m src.dbapi.main
+python -m src.core.main
+python -m src.orm.main
+```
+
+### Linux / macOS / WSL
+
+```bash
+python -m src.dbapi.main
+python -m src.core.main
+python -m src.orm.main
+```

@@ -1,5 +1,36 @@
 # Guide SQLAlchemy ORM
 
+## Où se trouve le point d'entrée de ce mode
+
+- Fichier principal à compléter : `src/orm/main.py`
+- Répertoire de travail : racine du dépôt `ccf_boutikpro_codespaces/`
+
+## Comment lancer ce mode
+
+### En GitHub Codespaces
+
+Depuis le terminal ouvert à la racine du projet :
+
+```bash
+python -m src.orm.main
+```
+
+### En local
+
+Après activation de l'environnement virtuel et depuis la racine du projet :
+
+```bash
+python -m src.orm.main
+```
+
+### Script d'aide disponible
+
+```bash
+bash scripts/run_orm.sh
+```
+
+Ce lancement permet de vérifier que la connexion à MySQL fonctionne avant de compléter le CRUD demandé dans le CCF.
+
 ## Principe
 
 L'ORM de SQLAlchemy permet de représenter les tables par des classes Python et les lignes par des objets.
