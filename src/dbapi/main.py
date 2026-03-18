@@ -280,3 +280,7 @@ def menu():
         else:
             print("Choix invalide, réessaie.")
             input("\nAppuyez sur Entrée pour continuer...")
+
+if __name__ == "__main__":
+    print_menu("Mode DB-API — BoutikPro")
+    menu()
